@@ -12,6 +12,9 @@
   // primary colors
   --primary-color-50: #4e7ddb;
 
+  // success color
+  --success-color-70: #e2f8f0b3;
+
   // logo color
   --neutral-color-text: #101010;
   --neutral-color-circle: #101010;
@@ -19,6 +22,10 @@
   // container
   --container-padding: 15px;
   --container-width: 1200px;
+
+  @include mobile {
+    --container-width: 480px;
+  }
 
   // transition
   --transition: 0.2s ease-in-out;
@@ -39,5 +46,8 @@
     // logo color
     --neutral-color-text: #fff;
     --neutral-color-circle: #343542;
+
+    // success color
+    --success-color-70: #e2f8f033;
   }
 }

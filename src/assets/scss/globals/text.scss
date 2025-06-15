@@ -111,9 +111,9 @@
         background-color: var(--neutral-color-100);
         transform: translateY(-42px);
 
-      //   @include mini-desktop {
-      //     display: none;
-      //   }
+        @include mini-desktop {
+          display: none;
+        }
       }
     }
 
