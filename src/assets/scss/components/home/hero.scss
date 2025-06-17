@@ -101,7 +101,20 @@
   }
 
   &__left {
+    margin-bottom: 140px;
     max-width: 599px;
+
+    @include small-tablet {
+      margin-bottom: 125px;
+    }
+
+    @include mobile {
+      margin-bottom: 100px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 80px;
+    }
   }
 
   &__title {
@@ -282,7 +295,7 @@
     }
 
     &-body {
-      &-th {
+      &-td {
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
@@ -318,7 +331,7 @@
       }
 
       &-num--green::before,
-      &-num-red::before {
+      &-num--red::before {
         content: '';
         display: inline-block;
         margin-right: 3px;
