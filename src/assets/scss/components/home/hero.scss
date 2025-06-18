@@ -205,9 +205,9 @@
       padding-bottom: 15px;
     }
 
-    @include small-mobile{
+    @include small-mobile {
       min-width: 200px;
-    text-align: center;
+      text-align: center;
     }
   }
 
