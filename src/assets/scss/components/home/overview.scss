@@ -6,6 +6,18 @@
     text-align: center;
   }
 
+  @include small-tablet {
+    padding: 90px;
+  }
+
+  @include mobile {
+    padding: 90px;
+  }
+
+  @include small-mobile {
+    padding: 70px;
+  }
+
   &__title {
     margin-bottom: 24px;
     max-width: 700px;
@@ -54,6 +66,20 @@
 
       @include tablet {
         margin-bottom: 40px;
+      }
+      
+      &:last-child {
+        @include small-tablet {
+          margin-bottom: 0;
+        }
+
+        @include mobile {
+          margin-bottom: 0;
+        }
+
+        @include small-mobile {
+          margin-bottom: 0;
+        }
       }
     }
 

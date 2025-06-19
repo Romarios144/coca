@@ -1,0 +1,222 @@
+.features {
+  padding: 160px 0 94px;
+
+  @include tablet {
+    padding: 140px 64px;
+  }
+
+  @include small-tablet {
+    padding: 110px 54px;
+  }
+
+  @include small-tablet {
+    padding: 90px 35px;
+  }
+
+  @include mobile {
+    padding: 90px 34px;
+  }
+
+  @include small-mobile {
+    padding: 70px 15px;
+  }
+
+  &__container {
+    @include flex-aling-center;
+    gap: 58px;
+
+    @include mini-desktop {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    @include mini-desktop {
+      gap: 40px;
+    }
+
+    @include small-mobile {
+      gap: 30px;
+    }
+  }
+
+  &__left {
+    position: relative;
+
+    &-stats {
+      position: absolute;
+      right: 36px;
+      bottom: 40px;
+      padding: 19px;
+      max-width: 290px;
+      background-color: #fff;
+
+      @include mobile {
+        right: 20px;
+        bottom: 22px;
+      }
+
+      @include small-mobile {
+        right: 10px;
+        bottom: 12px;
+        padding: 15px;
+      }
+
+      @include small-mobile {
+        max-width: 60dvw;
+      }
+
+      &-head {
+        @include flex-justify-between;
+        margin-bottom: 19px;
+
+        @include small-mobile {
+          margin-bottom: 8px;
+        }
+
+        &-title {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      &-content {
+        @include flex-aling-center;
+        gap: 26px;
+
+        @include small-mobile {
+          gap: 13px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 23px;
+          border-bottom: 1px solid #ededed;
+          padding-bottom: 23px;
+
+          @include small-mobile {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &-icon {
+          width: 60px;
+        }
+
+        &-info {
+          &-title {
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 150%;
+            color: #7e8492;
+          }
+
+          &-span {
+            @include flex-justify-between;
+            align-items: center;
+            margin-bottom: 9px;
+
+            &-num {
+              font-weight: 700;
+              font-size: 23px;
+              line-height: 120%;
+              color: #1d1e25;
+
+              @include mobile {
+                font-size: 18px;
+              }
+
+              @include small-mobile {
+                padding-right: 4px;
+              }
+            }
+
+            &-percent {
+              @include flex-aling-center;
+              gap: 6px;
+              font-weight: 500;
+              font-size: 10px;
+              line-height: 150%;
+              color: #1d1e25;
+
+              @include small-mobile {
+                gap: 4px;
+              }
+            }
+          }
+
+          &-descr {
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 100%;
+            color: #7e8492;
+          }
+
+          &-descr .bold {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    max-width: 557px;
+
+    @include mini-desktop {
+      max-width: 900px;
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -2px;
+      color: var(--neutral-color-100);
+    }
+
+    &-text {
+      margin-bottom: 40px;
+      max-width: 360px;
+      font-weight: 500;
+      line-height: 32px;
+      color: #7e8492;
+
+      @include mini-desktop {
+        max-width: 700px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-list {
+      max-width: 393px;
+
+      @include mini-desktop {
+        max-width: 700px;
+      }
+
+      &-item {
+        @include flex-aling-center;
+        gap: 16px;
+
+        &:not(:last-child) {
+          margin-bottom: 32px;
+
+          @include small-mobile {
+            margin-bottom: 14px;
+          }
+        }
+
+        &-text {
+          font-weight: 500;
+          line-height: 32px;
+          color: var(--neutral-color-100);
+        }
+      }
+    }
+  }
+}
