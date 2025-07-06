@@ -1,0 +1,95 @@
+<section class="hero">
+  <div class="container">
+    <h2 class="hero__title heading-h1">Contact our team to find out more</h2>
+    <div class="hero__map">
+      <!-- Контейнер для карты -->
+      <div id="chartdiv" style="width: 984px; height: 545px"></div>
+
+      <ul class="hero__contacts">
+        <li class="hero__contacts-item">
+          <h3 class="hero__contacts-item-title text-p-large">Support</h3>
+          <p class="hero__contacts-item-descr text-p-default">Our friendly team is here to help.</p>
+          <a href="mailto:support@sans.com" class="hero__contacts-item-link text-p-default">
+            support@sans.com
+          </a>
+        </li>
+        <li class="hero__contacts-item">
+          <h3 class="hero__contacts-item-title text-p-large">Sales</h3>
+          <p class="hero__contacts-item-descr text-p-default">Questions or queries? Get in touch!</p>
+          <a href="mailto:sales@sans.com" class="hero__contacts-item-link text-p-default"> sales@sans.com </a>
+        </li>
+        <li class="hero__contacts-item">
+          <h3 class="hero__contacts-item-title text-p-large">Phone</h3>
+          <p class="hero__contacts-item-descr text-p-default">Mon-Fri from 8am to 5pm.</p>
+          <a href="tel:+14353457655" class="hero__contacts-item-link text-p-default"> +1 (435) 345-7655 </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Инициализация карты и подключение скриптов -->
+<script>
+  var visitedplaces_config = {
+    map: 'world',
+    projection: 'geoEquirectangular',
+    theme: 'light-yellow',
+    water: 1,
+    graticule: 0,
+    names: 1,
+    duration: 2000,
+    slider: 0,
+    autoplay: 0,
+    autozoom: 'none',
+    data: [
+      {
+        places: [
+          'AU',
+          'ID',
+          'CN',
+          'IN',
+          'PK',
+          'IR',
+          'SD',
+          'DZ',
+          'ML',
+          'MR',
+          'BF',
+          'CI',
+          'GH',
+          'LR',
+          'GN',
+          'SL',
+          'GW',
+          'GM',
+          'SN',
+          'CO',
+          'PE',
+          'BO',
+          'MX',
+          'US',
+        ],
+        text: '',
+        color: '808080',
+        position: {
+          zoomLevel: 1.3,
+          geoPoint: { longitude: 49.86001739501851, latitude: -11.172049816894527 },
+          rotationX: -45.9,
+          rotationY: 0,
+        },
+        markers: [
+          {
+            latitude: -25.2744,
+            longitude: 133.7751,
+            label: 'Привет из Австралии!',
+            color: 'FF0000',
+          },
+        ],
+      },
+    ],
+    home: '-',
+  }
+</script>
+
+<script src="https://www.visitedplaces.com/js/common.js"></script>
+<script src="https://www.visitedplaces.com/js/viewer.js"></script>

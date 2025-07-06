@@ -12,7 +12,11 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
-      main: './src/index.html',
+      input: {
+        main: './src/index.html',
+        pricing: './src/pricing.html',
+        contact: './src/contact.html',
+      },
     },
   },
   plugins: [
