@@ -129,6 +129,8 @@
       gap: 40px 60px;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0 auto;
+      max-width: 300px;
     }
 
     @include small-mobile {
@@ -145,6 +147,8 @@
 
     @include mobile {
       min-width: 143px;
+      text-align: center;
+      cursor: pointer;
     }
   }
 
@@ -276,5 +280,13 @@
     font-weight: 500;
     line-height: 143%;
     color: #fff;
+  }
+
+  summary {
+    list-style: none;
+
+    @include mobile {
+      list-style: revert;
+    }
   }
 }
