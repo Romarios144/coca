@@ -84,6 +84,7 @@
   &-p {
     &-subtitle {
       @include flex-aling-center;
+      position: relative;
       gap: 27px;
       font-weight: 600;
       font-size: 32px;
@@ -105,6 +106,9 @@
 
       &::before {
         content: '';
+        position: absolute;
+        top: 63px;
+        left: 0;
         display: inline-block;
         width: 76px;
         height: 1px;

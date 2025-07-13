@@ -145,31 +145,31 @@
 
     @include small-mobile {
       margin-bottom: 20px;
-      font-size: 30px;
     }
   }
 
   &__subtitle {
     margin-bottom: 69px;
+    padding-left: 100px;
+
+    @include mini-desktop {
+      padding-left: 0;
+    }
 
     @include tablet {
       margin-bottom: 55px;
-      font-size: 25px;
     }
 
     @include small-tablet {
       margin-bottom: 35px;
-      font-size: 21px;
     }
 
     @include mobile {
       margin-bottom: 35px;
-      font-size: 19px;
     }
 
     @include mobile {
       margin-bottom: 20px;
-      font-size: 17px;
     }
   }
 
