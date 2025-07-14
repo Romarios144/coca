@@ -1,0 +1,227 @@
+.team {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  @include tablet {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  @include small-tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include small-mobile {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: 40%;
+    z-index: var(--z-index-1);
+    display: inline-block;
+    border-radius: 50%;
+    width: 525px;
+    height: 525px;
+    background: var(--success-color-70);
+    filter: blur(180px);
+
+    @include mini-desktop {
+      right: 40px;
+      bottom: 47%;
+      width: 400px;
+      height: 400px;
+    }
+
+    @include tablet {
+      bottom: 53%;
+      width: 300px;
+      height: 300px;
+    }
+
+    @include small-tablet {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 800px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: var(--neutral-color-100);
+  }
+
+  &__descr {
+    margin-bottom: 80px;
+    max-width: 500px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--neutral-color-150);
+
+    @include small-tablet {
+      margin-bottom: 65px;
+    }
+
+    @include mobile {
+      margin-bottom: 55px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 100px;
+
+    @include tablet {
+      margin-bottom: 85px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 55 px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 45px;
+    }
+
+    &-btns {
+      position: absolute;
+      top: 177px;
+      left: 29.5%;
+      z-index: var(--z-index-2);
+
+      @include mini-desktop {
+        left: 25.5%;
+      }
+
+      @include tablet {
+        left: 21.5%;
+      }
+
+      @include small-tablet {
+        left: 85.5%;
+      }
+
+      @include mobile {
+        left: 100%;
+        transform: translateX(-81px);
+      }
+    }
+  }
+
+  &__article {
+    max-width: 379px;
+
+    &-info {
+      @include flex-all-between;
+      margin: 16px 0 8px;
+
+      @include mobile {
+        margin: 12px 0 0;
+      }
+
+      @include small-mobile {
+        margin: 5px 0 0;
+      }
+
+      &-name {
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+      }
+
+      &-social {
+        display: flex;
+        gap: 8px;
+
+        & svg {
+          & path {
+            fill: var(--neutral-color-text);
+          }
+        }
+      }
+    }
+
+    &-job {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__foot {
+    @include flex-all-between;
+
+    @include mini-desktop {
+      @include flex-column;
+      text-align: start;
+    }
+
+    &-title {
+      max-width: 626px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -2px;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        margin-bottom: 24px;
+        max-width: 100%;
+      }
+
+      @include mobile {
+        margin-bottom: 18px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 13px;
+      }
+    }
+
+    &-descr {
+      @include flex-column;
+      gap: 24px;
+      max-width: 506px;
+      font-weight: 500;
+      line-height: 32px;
+      color: var(--neutral-color-150);
+
+      @include mini-desktop {
+        max-width: 100%;
+      }
+
+      @include mobile {
+        gap: 18px;
+      }
+
+      @include small-mobile {
+        gap: 13px;
+      }
+    }
+
+    &-link {
+      font-weight: 600;
+      line-height: 24px;
+      color: var(--neutral-color-100);
+    }
+  }
+}

@@ -1,17 +1,55 @@
 .intro {
-  &__container {
-    padding-top: 105px;
+  padding-top: 105px;
+
+  @include mini-desktop {
+    padding-top: 80px;
+  }
+
+  @include small-tablet {
+    padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-top: 50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 80px;
+    z-index: var(--z-index-1);
+    display: inline-block;
+    border-radius: 50%;
+    width: 551px;
+    height: 551px;
+    background: #fa7515;
+    opacity: 0.13;
+    filter: blur(220px);
 
     @include mini-desktop {
-      padding-top: 80px;
+      left: 50px;
+      width: 400px;
+      height: 400px;
+    }
+
+    @include tablet {
+      width: 300px;
+      height: 300px;
     }
 
     @include small-tablet {
-      padding-top: 60px;
+      top: 25px;
+      left: 50%;
+      width: 250px;
+      height: 250px;
+      transform: translateX(-50%);
     }
 
     @include mobile {
-      padding-top: 50px;
+      top: 0;
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -147,7 +185,7 @@
       }
 
       @include tablet {
-        top:43%;
+        top: 43%;
         left: 93%;
       }
 
@@ -212,7 +250,7 @@
     @include mini-desktop {
       @include flex-column-all-center;
       padding: 65px 0;
-      text-align: center;
+      text-align: start;
     }
 
     @include small-tablet {
