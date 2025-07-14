@@ -1,12 +1,14 @@
-import '../scss/pricing.scss'
+import '../scss/about.scss'
 
 // components
 import { useTheme } from './components/theme'
 import { useBurger } from './components/burger'
-import { usePriceSwitcher } from './components/swticher'
+import { useIntroSlider } from './components/slider-intro'
+import { useTeamSlider } from './components/slider-team'
 import { useFooterAccordion } from './components/accordion'
 
 useTheme()
 useBurger()
-usePriceSwitcher()
+useTeamSlider()
+useIntroSlider()
 useFooterAccordion()
