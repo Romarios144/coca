@@ -36,6 +36,12 @@
   --container-padding: 15px;
   --container-width: 1200px;
 
+  // articles btns
+  --rect-color: #1d1e25;
+  --path-color: #fff;
+  --is-disabled-rect: #fff;
+  --is-disabled-path: #ced1d8;
+
   @include mini-desktop {
     --container-width: 1000px;
   }
@@ -76,5 +82,11 @@
 
     // success color
     --success-color-70: #e2f8f033;
+
+    // articles btns
+    --rect-color: #CED1D8;
+    --path-color: #000;
+    --is-disabled-rect: #fff;
+    --is-disabled-path: #000;
   }
 }
