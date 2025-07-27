@@ -18,6 +18,7 @@ export const useArticlesSlider = () => {
     breakpoints: {
       0: {
         spaceBetween: 20,
+        slidesPerView: 1,
       },
       577: {
         slidesPerView: 1,
